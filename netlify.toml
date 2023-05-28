@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/director/*"
+  to = "https://director.vidlium.com/:splat"
+  status = 200
