@@ -1,4 +1,4 @@
 [[redirects]]
   from = "/director/*"
-  to = "https://director.vidlium.com/:splat"
+  to = "https://vidlium-director.netlify.app/:splat"
   status = 200
