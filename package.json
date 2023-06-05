@@ -1,0 +1,27 @@
+{
+  "name": "vidlium_website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "build": "webpack watch --mode development",
+    "fullbuild": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andrew-Gallimore/vidlium_website.git"
+  },
+  "author": "Andrew Gallimore",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Andrew-Gallimore/vidlium_website/issues"
+  },
+  "homepage": "https://github.com/Andrew-Gallimore/vidlium_website#readme",
+  "dependencies": {
+    "firebase": "^9.22.1"
+  },
+  "devDependencies": {
+    "webpack": "^5.84.1",
+    "webpack-cli": "^5.1.1"
+  }
+}
