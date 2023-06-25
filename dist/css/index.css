@@ -365,11 +365,11 @@ h1, h2, p, input, button {
 
 .main-text-wrapper {
     overflow: hidden;
+    margin-bottom: auto;
 }
 .main-text {
     /* margin: 8px 0; */
     margin: 0;
-    margin-bottom: auto;
     font-size: 96px;
     font-weight: 800;
     text-align: center;
