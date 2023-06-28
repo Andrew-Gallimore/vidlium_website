@@ -1,14 +1,17 @@
 [build]
   publish = "dist/"
 
+
+# The current public directors page redirect
 [[redirects]]
   from = "/director/*"
   to = "https://vidlium-director.netlify.app/:splat"
   status = 200
 
+# Redirects for the preview of the directors page
 [[redirects]]
   from = "/preview"
-  to = "https://vidlium-director-preview.netlify.app/:splat"
+  to = "https://vidlium-director-preview.netlify.app/index.html"
   status = 200
 [[redirects]]
   from = "/preview/*"
