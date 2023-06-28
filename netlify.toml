@@ -7,6 +7,6 @@
   status = 200
 
 [[redirects]]
-from = "/preview/*"
-to = "https://vidlium-director-preview.netlify.app/:splat"
-status = 200
+  from = "/preview/*"
+  to = "https://vidlium-director-preview.netlify.app/:splat"
+  status = 200
