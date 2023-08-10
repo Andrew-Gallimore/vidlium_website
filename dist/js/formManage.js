@@ -71,7 +71,7 @@ notifyMeForm.addEventListener("submit", async e => {
         notifyMeForm.querySelector("button").classList.add("loading");
         
         if(NMemail && NMpre) {
-            var status = await storeData(NMemail.value, NMpre.checked)
+            var status = await storeData(NMemail.value, NMpre.checked, true)
             if(status === "Success") {
                 console.log("Data Stored Successfully");
 

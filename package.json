@@ -4,8 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "build": "webpack watch --mode development",
-    "fullbuild": "webpack --mode production"
+    "dev": "webpack watch --mode development",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/Andrew-Gallimore/vidlium_website#readme",
   "dependencies": {
-    "firebase": "^9.22.1"
+    "firebase": "^9.22.1",
+    "tiny-slider": "^2.9.4"
   },
   "devDependencies": {
     "webpack": "^5.84.1",
