@@ -4,8 +4,9 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "build": "webpack watch --mode development",
-    "fullbuild": "webpack --mode production"
+    "cert": "gulp genCert",
+    "start": "gulp dev",
+    "build": "gulp"
   },
   "repository": {
     "type": "git",
@@ -18,10 +19,21 @@
   },
   "homepage": "https://github.com/Andrew-Gallimore/vidlium_website#readme",
   "dependencies": {
-    "firebase": "^9.22.1"
+    "firebase": "^9.22.1",
+    "tiny-slider": "^2.9.4"
   },
   "devDependencies": {
+    "devcert": "^1.2.2",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-connect": "^5.7.0",
+    "gulp-extract-critical-css": "^1.0.5",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-terser": "^2.1.0",
     "webpack": "^5.84.1",
-    "webpack-cli": "^5.1.1"
+    "webpack-cli": "^5.1.1",
+    "webpack-stream": "^7.0.0"
   }
 }

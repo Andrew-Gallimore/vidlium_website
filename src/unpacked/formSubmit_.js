@@ -1,3 +1,5 @@
+// ---- Built using WEBPACK ---- //
+
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, addDoc } from "firebase/firestore";
@@ -20,20 +22,24 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore()
 const analytics = getAnalytics(app);
 
-async function storeData(email, pre) {
+async function storeData(email, pre, testing=false) {
     try {
         if(typeof email !== "string" || typeof pre !== "boolean") {
             throw "Wrong arguement types";
         }
-        var time = Date.now()
-        const docRef = await addDoc(collection(db, "users"), {
-            emailAdress: email,
-            preRelease: pre,
-            time: time
-        });
-        logEvent(analytics, 'form_submit', {
-            pre_release: pre
-        });
+        if(!testing) {
+            var time = Date.now()
+            const docRef = await addDoc(collection(db, "users"), {
+                emailAdress: email,
+                preRelease: pre,
+                time: time
+            });
+            logEvent(analytics, 'form_submit', {
+                pre_release: pre
+            });
+        }else {
+            console.warn("Submitted in testing mode. Remove before production")
+        }
         return "Success";
     }catch (e) {
         return "Error";
