@@ -1,0 +1,218 @@
+/* 
+Created 8/10/2023
+*/
+
+
+
+.landing .content.visible .main-image {
+    transition: opacity 0.2s;
+    opacity: 1;
+}
+.landing .content.visible .menu-small-image {
+    animation: fadeUp 0.4s ease-out 0.3s forwards;
+}
+.landing .content.visible .menu-tall-image {
+    animation: fadeUp 0.4s ease-out 0.6s forwards;
+}
+
+
+/* Advanced feeds section */
+.advanced-feeds.trig .vid-underline::after {
+    width: 0;
+    animation: lineExpand 0.8s forwards 0.6s ease-out;
+}
+
+/* ONE */
+.advanced-feeds .video.one {
+    opacity: 0;
+}
+.advanced-feeds .display.trig .video.one { 
+    animation: fadeIn 2s normal 0.5s forwards ease-in-out; 
+    opacity: 0;
+}
+.advanced-feeds .display:not(.trig) .video.one {
+    animation: fadeOut 0.01s linear 0s forwards;
+}
+.advanced-feeds .display.trig .inner-video.one { 
+    animation: snapIn 0.25s normal 1s forwards ease-in-out; 
+    opacity: 0;
+}
+/* .advanced-feeds .display.trig * #leader-line-1-line-path {
+    animation: lineConnect 0.25s normal 1s forwards ease-in-out; 
+    opacity: 0;
+} */
+/* THREE */
+.advanced-feeds .video.three {
+    opacity: 0;
+}
+.advanced-feeds .display.trig .video.three {
+    animation: fadeIn 2s normal 0.9s forwards ease-in-out; 
+    opacity: 0;
+}
+.advanced-feeds .display:not(.trig) .video.three {
+    animation: fadeOut 0.01s linear 0s forwards;
+}
+.advanced-feeds .display.trig .inner-video.three { 
+    animation: snapIn 0.25s normal 1.55s forwards ease-in-out; 
+    opacity: 0;
+}
+/* .advanced-feeds .display.trig * #leader-line-3-line-path {
+    animation: lineConnect 0.25s normal 1.55s forwards ease-in-out; 
+    opacity: 0;
+} */
+/* TWO */
+.advanced-feeds .video.two {
+    opacity: 0;
+}
+.advanced-feeds .display.trig .video.two {
+    animation: fadeIn 2s normal 1.5s forwards ease-in-out; 
+    opacity: 0;
+}
+.advanced-feeds .display:not(.trig) .video.two {
+    animation: fadeOut 0.01s linear 0s forwards;
+}
+.advanced-feeds .display.trig .inner-video.two { 
+    animation: snapIn 0.25s normal 2s forwards ease-in-out; 
+    opacity: 0;
+}
+/* .advanced-feeds .display.trig ~ #leader-line-2-line-shape {
+    animation: lineConnect 0.25s normal 2s forwards ease-in-out; 
+    opacity: 0;
+} */
+
+@keyframes fadeIn {
+    0% { 
+        opacity: 0;
+        translate: 0 30px;
+    }
+    50% {
+        opacity: 1;
+        translate: 0 -7px;
+    }
+    100% { 
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+@keyframes fadeOut {
+    0% { 
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+        translate: 0 -7px;
+    }
+}
+@keyframes snapIn {
+    0% { 
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% { 
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes lineConnect {
+    0% { 
+        opacity: 0;
+        /* transform: scale(0.9); */
+    }
+    100% { 
+        opacity: 1;
+        /* transform: scale(1); */
+    }
+}
+
+
+
+
+/* Built section */
+.built .side p {
+    opacity: 0;
+}
+.built .side.trig p {
+    opacity: 1;
+    transition: opacity 0.3s ease-out 0.6s;
+}
+
+
+
+/* Controls section (includes slider) */
+.controls.trig :not(.two).vid-underline::after {
+    width: 0;
+    animation: lineExpand 0.8s forwards 1.2s ease-out;
+}
+.controls.trig .two .vid-underline::after {
+    width: 0;
+    animation: lineExpand 0.7s forwards 1.6s ease-out;
+}
+
+.controls.trig .one {
+    opacity: 0;
+    animation: fadeUp 0.6s ease-out 0.6s forwards;
+}
+.controls.trig .two {
+    opacity: 0;
+    animation: fadeUp 0.6s ease-out 0.9s forwards;
+}
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        translate: 0 30px ;
+    }
+    100% {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+
+
+/* Sports section */
+/* First banner */
+.sports .inner-content {
+    opacity: 0;
+}
+.sports .inner-content.trig {
+    animation: popUp 1s ease-out 0.5s forwards;
+}
+/* Second banner */
+.sports .buttons .row {
+    opacity: 0;
+}
+.sports .buttons.trig .row {
+    animation: slideRight 1s ease-out 0.5s forwards;
+}
+@keyframes slideRight {
+    0% {
+        translate: -50px 0;
+        opacity: 0;
+    }
+    100% {
+        translate: 0px 0;
+        opacity: 1;
+    }
+}
+
+
+/* CTA End */
+.cta-end .content .pane {
+    opacity: 0;
+}
+.cta-end .content.trig .pane.left {
+    animation: popUp 0.7s ease-out 0.6s forwards;
+}
+.cta-end .content.trig .pane.right {
+    animation: popUp 0.7s ease-out 1s forwards;
+}
+@keyframes popUp {
+    0% {
+        opacity: 0;
+        translate: 0 70px;
+    }
+    100% {
+        opacity: 1;
+        translate: 0 0;
+    }
+}

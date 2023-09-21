@@ -1,6 +1,6 @@
 // ---- Built using WEBPACK ---- //
 
-import { tns } from "../node_modules/tiny-slider/src/tiny-slider";
+import { tns } from "tiny-slider";
 
 var slider = tns({
     container: '.controls .scroll',

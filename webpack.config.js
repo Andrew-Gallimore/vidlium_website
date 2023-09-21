@@ -2,8 +2,8 @@ const path = require('path')
 
 module.exports = {
   entry: {
-    formSubmit: './src/formSubmit_.js',
-    tinySlider: './src/tinySlider_.js'
+    formSubmit: './src/unpacked/formSubmit_.js',
+    tinySlider: './src/unpacked/tinySlider_.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist/js'),
