@@ -1,3 +1,4 @@
+const TESTINGMODE = false;
 var alreadySubmited = false;
 
 function validateEmail(email) {
@@ -12,17 +13,17 @@ notifyMeForm.addEventListener("submit", async e => {
 
     // Checking if already submitted
     if(alreadySubmited) {
-        // Showing confetti!
-        party.confetti(notifyMeForm.querySelector("button"), {
-            spread: 30
-        });
-
         document.querySelector(".submit-warning p").innerHTML = "Already Submited Responce";
         document.querySelector(".submit-warning").classList.add("active");
         setTimeout(() => {
             document.querySelector(".submit-warning").classList.remove("active");
         }, 3000);
         console.log("Already Submited")
+
+        // Showing confetti!
+        party.confetti(notifyMeForm.querySelector("button"), {
+            spread: 30
+        });
         return;
     }
 
@@ -71,7 +72,7 @@ notifyMeForm.addEventListener("submit", async e => {
         notifyMeForm.querySelector("button").classList.add("loading");
         
         if(NMemail && NMpre) {
-            var status = await storeData(NMemail.value, NMpre.checked, true)
+            var status = await storeData(NMemail.value, NMpre.checked, TESTINGMODE)
             if(status === "Success") {
                 console.log("Data Stored Successfully");
 
