@@ -39,10 +39,6 @@ Check out some of the 'sister repos' of vidlium_website, you can find code for o
 - [Vidlium_Director](https://github.com/Andrew-Gallimore/vidlium_director)
 - [Vidlium_Docs](https://github.com/Andrew-Gallimore/vidlium_docs)
 
-
-> The `Directors Page` is a critial page which allows directors to control a Vidlium Stream. This repository holds only the code for that page found here: https://vidlium.com/director.
-
-
 ## Usage
 
 To start using Vidlium, the web version _(currently the only version)_ of the software is best. You can get started immediately at [vidlium.com](https://vidlium.com). The website provides access to the system as well as additional information on the code and how to do basic things via the [docs & guides](https://docs.vidlium.com).
