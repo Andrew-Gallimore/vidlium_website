@@ -14,14 +14,14 @@
 
 <h4 align="center">
   <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">
-    <img src="https://img.shields.io/github/license/Andrew-Gallimore/vidlium_director" alt="license">
+    <img src="https://img.shields.io/github/license/Andrew-Gallimore/vidlium_website" alt="license">
   </a>
   <a href="https://github.com/amplication/amplication/graphs/contributors">
     <img src="https://img.shields.io/netlify/ddf1bb6e-e2e4-4d07-9afb-db62ecbf8808?label=hosting" alt="hosting status">
   </a>
 </h4>
 
-![](https://github.com/Andrew-Gallimore/vidlium_director/blob/main/git-imgs/Directors%20Page%208_unoptimized.jpg)
+![](https://github.com/Andrew-Gallimore/vidlium_website/blob/main/git-imgs/Landing.JPG)
 
 
 <h1 align="center">
