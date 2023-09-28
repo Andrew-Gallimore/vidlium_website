@@ -41,7 +41,7 @@
     <div class="main-sec landing">
         <div class="background">
             <div>
-                <!-- <img class="bg" src="img/Landing BG (unoptimized).png" alt=""> -->
+                <!-- bg-img & bg-img are both used as the colored background in css-->
                 <div class="bg-img"></div>
                 <div class="bg-img-high"></div>
                 <img class="gem-1" src="img/Logo v2.1 - 64px.png" alt="Main Logo">
@@ -50,322 +50,326 @@
             </div>
         </div>
         <div class="content">
-            <div class="main-image">
-                <nav class="top-nav">
-                    <div>
-                        <button class="menu-opener">
-                            <img src="https://img.icons8.com/F1D051/material-rounded/48/null/menu--v1.png"/>
-                        </button>
-                        <h1 class="stream-name">Awesome Stream</h1>
-                    </div>
-                    <div class="center">
-                        <ul>
-                            <li><button>
-                                <div class="img-wrapper">
-                                    <img src="https://img.icons8.com/FFFFFF/material-rounded/48/null/health-data.png"/>
-                                    <img class="color" src="img/Health Data.png">
-                                </div>
-                                <h2>Rooms</h2>
-                            </button></li>
-                            <li><button>
-                                <div class="img-wrapper">
-                                    <img src="https://img.icons8.com/FFFFFF/material-rounded/48/null/collage.png"/>
-                                    <img src="img/Collage.png" class="color">
-                                </div>
-                                <!-- <img src="https://img.icons8.com/material-rounded/48/null/group-layouts.png"/> -->
-                                <h2>Scenes</h2>
-                            </button></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <div class="warning">
-                            <h4>Preview</h4>
+            <div class="images">
+                <div class="main-image">
+                    <nav class="top-nav">
+                        <div>
+                            <button class="menu-opener">
+                                <img src="https://img.icons8.com/F1D051/material-rounded/48/null/menu--v1.png"/>
+                            </button>
+                            <h1 class="stream-name">Awesome Stream</h1>
                         </div>
-                    </div>
-                    <!-- <div class="account-block active">
-                        <h2 class="account-label">Andrew</h2>
-                        <a class="account-icon"><img src="img/New Icon.png" alt=""></a>
-                    </div> -->
-                </nav>
-                <div class="maga-pages">
-                    <div class="page all-controls active">
-                        
-                        <div class="left-panel resizable">
-                            <div class="resizer resizer-r"></div>
-            
-                            <div class="large-lists scrollbar--dark">
-                                <div class="scroll">
-            
-                                    <h1>Rooms</h1>
-                                    <div class="list rooms">
-                                        <button data-viewid="av8v1a" class="active" onclick="clickOfButtons(this, '.all-controls .left-panel .list'); loadView(this)">
-                                            <h3>Room 1</h3>
-                                            <div class="sending">
-                                                <img width="48" height="48" src="https://img.icons8.com/FFFFFF/material-rounded/48/tv-show.png" alt="tv-show"/>
-                                                <!-- <img width="48" height="48" src="https://img.icons8.com/FFFFFF/material-rounded/48/video-call.png" alt="video-call"/> -->
-                                            </div>
-                                        </button>
-                                        <button data-viewid="0ob1f4" onclick="clickOfButtons(this, '.all-controls .left-panel .list'); loadView(this)">
-                                            <h3>Room 2</h3>
-                                            <div class="sending">
-                                                <img width="48" height="48" src="https://img.icons8.com/FFFFFF/material-rounded/48/tv-show.png" alt="tv-show"/>
-                                                <!-- <img width="48" height="48" src="https://img.icons8.com/FFFFFF/material-rounded/48/video-call.png" alt="video-call"/> -->
-                                            </div>
-                                        </button>
-                                        <button onclick="clickOfButtons(this, '.all-controls .left-panel .list'); loadView(this)">
-                                            <h3>Control Room</h3>
-                                            <div class="sending">
-                                                <!-- <img width="48" height="48" src="https://img.icons8.com/FFFFFF/material-rounded/48/video-call.png" alt="video-call"/> -->
-                                            </div>
-                                        </button>
-                                        <button onclick="clickOfButtons(this, '.all-controls .left-panel .list')">
-                                            <h3>Director Chat</h3>
-                                            <div class="sending">
-                                                <!-- <img width="48" height="48" src="https://img.icons8.com/FFFFFF/material-rounded/48/video-call.png" alt="video-call"/> -->
-                                            </div>
-                                        </button>
+                        <div class="center">
+                            <ul>
+                                <li><button>
+                                    <div class="img-wrapper">
+                                        <img src="https://img.icons8.com/FFFFFF/material-rounded/48/null/health-data.png"/>
+                                        <img class="color" src="img/Health Data.png">
                                     </div>
-                
-                                    <h1>Scenes</h1>
-                                    <div class="list rooms">
-                                        <button onclick="clickOfButtons(this, '.all-controls .left-panel .list')">
-                                            <h3>Director BTS</h3>
-                                            <div class="sending">
-                                                <img width="48" height="48" src="https://img.icons8.com/FFFFFF/material-rounded/48/tv-show.png" alt="tv-show"/>
-                                                <!-- <img width="48" height="48" src="https://img.icons8.com/FFFFFF/material-rounded/48/video-call.png" alt="video-call"/> -->
-                                            </div>
-                                        </button>
-                                        <button onclick="clickOfButtons(this, '.all-controls .left-panel .list')">
-                                            <h3>Guests All</h3>
-                                            <div class="sending">
-                                                <!-- <img width="48" height="48" src="https://img.icons8.com/FFFFFF/material-rounded/48/video-call.png" alt="video-call"/> -->
-                                            </div>
-                                        </button>
-                                        <button onclick="clickOfButtons(this, '.all-controls .left-panel .list')">
-                                            <h3>Focused Solo</h3>
-                                            <div class="sending">
-                                                <!-- <img width="48" height="48" src="https://img.icons8.com/FFFFFF/material-rounded/48/video-call.png" alt="video-call"/> -->
-                                            </div>
-                                        </button>
+                                    <h2>Rooms</h2>
+                                </button></li>
+                                <li><button>
+                                    <div class="img-wrapper">
+                                        <img src="https://img.icons8.com/FFFFFF/material-rounded/48/null/collage.png"/>
+                                        <img src="img/Collage.png" class="color">
                                     </div>
-            
-                                </div>
+                                    <!-- <img src="https://img.icons8.com/material-rounded/48/null/group-layouts.png"/> -->
+                                    <h2>Scenes</h2>
+                                </button></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="warning">
+                                <h4>Preview</h4>
                             </div>
                         </div>
-            
-                        <div class="content-pages">
-                            <div class="room page">
-                                <div class="controls-nav">
-                                    <h1 class="room-name">Room 1</h1>
-                                    <!-- <div class="zoom">
-                                        <input type="range" min="100" value="300" max="500" autocomplete="off">
-                                    </div> -->
-                                </div>
-                                <div class="video-grid scrollbar--dark">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="overlay">
-
-                </div>
-            </div>
-            <div class="menu-small-image">
-                <div class="wrapper">
-                    <h2>Room 1 Chat</h2>
-                    <div class="messages">
-                        <div class="talk">
-                            <h4>Guest 1</h4>
-                            <p>Hey Y'all!</p>
-                        </div>
-                        <div class="talk">
-                            <h4>Guest 2</h4>
-                            <p>When is the stream starting?</p>
-                        </div>
-                        <div class="talk me">
-                            <h4>ME</h4>
-                            <p>5 minutes!</p>
-                        </div>
-                        <div class="talk">
-                            <h4>[MOD] Jimmy</h4>
-                            <p>Sweet</p>
-                        </div>
-                    </div>
-                    <div class="enter apply-btn-styles">
-                        <input type="text" value="Alright, here we go..." autocomplete="off">
-                        <button>
-                            <img width="48" height="48" src="https://img.icons8.com/C6C6C6/material-rounded/48/filled-sent.png" alt="filled-sent"/>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-tall-image">
-                <div class="insp-pages apply-btn-styles">
-                    <div class="page room scrollbar--dark">
-                        <div class="scroll">
-                            <!-- Room Attributes Section -->
-                            <div class="insp-opener">
-                                <button class="open" onclick="openInspSection(this);">
-                                    <!-- Arrow Icon -->
-                                    <div class="icon">
-                                        <img width="48" height="48" src="https://img.icons8.com/757575/material-rounded/48/expand-arrow--v1.png" alt="expand-arrow--v1"/>
-                                    </div>
-                                    <h3>Room Attributes</h3>
-                                </button>
-                                <button class="reload">
-                                    <img width="24" height="24" src="https://img.icons8.com/757575/material-rounded/24/reboot.png" alt="reboot"/>
-                                </button>
-                            </div>
-
-                            <div class="insp-section active">
-                                <div class="settings-grid">
-                                    <div class="label">
-                                        <h4>Room Name</h4>
-                                    </div>
-                                    <div class="track">
-                                        <div>
-                                            <input type="text" value="Room 1" autocomplete="off">
-                                        </div>
-                                    </div>
-
-                                    <div class="label">
-                                        <h4>Guest Limit</h4>
-                                    </div>
-                                    <div class="track">
-                                        <div>
-                                            <div class="number-value-input">
-                                                <input type="text" maxlength="6" value="10" autocomplete="off">
-                                                <p>10<span></span></p>
-                                                <button class="up"><img width="24" height="24" src="https://img.icons8.com/686868/material-rounded/24/sort-up.png" alt="sort-up"/></button>
-                                                <button class="down"><img width="24" height="24" src="https://img.icons8.com/686868/material-rounded/24/sort-down.png" alt="sort-down"/></button>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="under-input-checkbox">
-                                                <input type="checkbox" autocomplete="off">
-                                                <p>Unlimited Guests</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="label with-switch">
-                                        <h4>Allow Joining</h4>
-                                        <label class="switch">
-                                            <input type="checkbox" checked autocomplete="off">
-                                            <span class="switch-slider"></span>
-                                        </label>
-                                    </div>
-                                    <div class="track">
-                                        <div>
-                                            <div class="sub-text">
-                                                <p>Via link or internally</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="label with-switch">
-                                        <h4>List in stream</h4>
-                                        <label class="switch">
-                                            <input type="checkbox" autocomplete="off">
-                                            <span class="switch-slider"></span>
-                                        </label>
-                                    </div>
-                                    <div class="track">
-                                        <div>
-                                            <div class="sub-text">
-                                                <p>Is it visible to guests?</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <!-- Feeds Section -->
-                            <div class="insp-opener">
-                                <button class="open" onclick="openInspSection(this);">
-                                    <!-- Arrow Icon -->
-                                    <div class="icon">
-                                        <img width="48" height="48" src="https://img.icons8.com/757575/material-rounded/48/expand-arrow--v1.png" alt="expand-arrow--v1"/>
-                                    </div>
-                                    <h3>Feeds</h3>
-                                </button>
-                                <button class="reload">
-                                    <img width="24" height="24" src="https://img.icons8.com/757575/material-rounded/24/reboot.png" alt="reboot"/>
-                                </button>
-                            </div>
-
-                            <div class="insp-section active">
-                                <div class="settings-grid">
-                                    <div class="label">
-                                        <h4>P2P Video Quality</h4>
-                                    </div>
-                                    <div class="track">
-                                        <div>
-                                            <div class="number-value-input">
-                                                <input type="text" maxlength="4" value="500" autocomplete="off">
-                                                <p>500<span>Kbps</span></p>
-                                                <button class="up"><img width="24" height="24" src="https://img.icons8.com/686868/material-rounded/24/sort-up.png" alt="sort-up"/></button>
-                                                <button class="down"><img width="24" height="24" src="https://img.icons8.com/686868/material-rounded/24/sort-down.png" alt="sort-down"/></button>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="pills">
-                                                <button><p>500</p></button>
-                                                <button><p>1000</p></button>
-                                                <button><p>2500</p></button>
-                                                <button><p>6000</p></button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="label">
-                                        <h4>Quick Mute</h4>
-                                    </div>
-                                    <div class="track">
-                                        <div>
-                                            <div class="buttons">
-                                                <button>All Mic's</button>
-                                                <button>All Video's</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="label with-switch">
-                                        <h4>Highlight</h4>
-                                        <label class="switch">
-                                            <input type="checkbox" checked autocomplete="off">
-                                            <span class="switch-slider"></span>
-                                        </label>
-                                    </div>
-                                    <div class="track">
-                                        <div>
-                                            <div class="selector with-pointer">
-                                                <select name="director-send-locations">
-                                                    <option value="aoiv72bo">Guest 1</option>
-                                                    <option value="qov79b3v">Guest 2</option>
-                                                    <option value="12lfiyba">Named Guest</option>
-                                                    <option value="a9vybq21">Another Guest</option>
-                                                </select>
-                                                <button>
-                                                    <img width="48" height="48" src="https://img.icons8.com/C6C6C6/material-rounded/48/blue-pointer.png" alt="blue-pointer"/>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
+                        <!-- <div class="account-block active">
+                            <h2 class="account-label">Andrew</h2>
+                            <a class="account-icon"><img src="img/New Icon.png" alt=""></a>
+                        </div> -->
+                    </nav>
+                    <div class="maga-pages">
+                        <div class="page all-controls active">
                             
+                            <div class="left-panel resizable">
+                                <div class="resizer resizer-r"></div>
+                
+                                <div class="large-lists scrollbar--dark">
+                                    <div class="scroll">
+                
+                                        <h1>Rooms</h1>
+                                        <div class="list rooms">
+                                            <button data-viewid="av8v1a" class="active" onclick="clickOfButtons(this, '.all-controls .left-panel .list'); loadView(this)">
+                                                <h3>Room 1</h3>
+                                                <div class="sending">
+                                                    <img width="48" height="48" src="https://img.icons8.com/FFFFFF/material-rounded/48/tv-show.png" alt="tv-show"/>
+                                                    <!-- <img width="48" height="48" src="https://img.icons8.com/FFFFFF/material-rounded/48/video-call.png" alt="video-call"/> -->
+                                                </div>
+                                            </button>
+                                            <button data-viewid="0ob1f4" onclick="clickOfButtons(this, '.all-controls .left-panel .list'); loadView(this)">
+                                                <h3>Room 2</h3>
+                                                <div class="sending">
+                                                    <img width="48" height="48" src="https://img.icons8.com/FFFFFF/material-rounded/48/tv-show.png" alt="tv-show"/>
+                                                    <!-- <img width="48" height="48" src="https://img.icons8.com/FFFFFF/material-rounded/48/video-call.png" alt="video-call"/> -->
+                                                </div>
+                                            </button>
+                                            <button onclick="clickOfButtons(this, '.all-controls .left-panel .list'); loadView(this)">
+                                                <h3>Control Room</h3>
+                                                <div class="sending">
+                                                    <!-- <img width="48" height="48" src="https://img.icons8.com/FFFFFF/material-rounded/48/video-call.png" alt="video-call"/> -->
+                                                </div>
+                                            </button>
+                                            <button onclick="clickOfButtons(this, '.all-controls .left-panel .list')">
+                                                <h3>Director Chat</h3>
+                                                <div class="sending">
+                                                    <!-- <img width="48" height="48" src="https://img.icons8.com/FFFFFF/material-rounded/48/video-call.png" alt="video-call"/> -->
+                                                </div>
+                                            </button>
+                                        </div>
+                    
+                                        <h1>Scenes</h1>
+                                        <div class="list rooms">
+                                            <button onclick="clickOfButtons(this, '.all-controls .left-panel .list')">
+                                                <h3>Director BTS</h3>
+                                                <div class="sending">
+                                                    <img width="48" height="48" src="https://img.icons8.com/FFFFFF/material-rounded/48/tv-show.png" alt="tv-show"/>
+                                                    <!-- <img width="48" height="48" src="https://img.icons8.com/FFFFFF/material-rounded/48/video-call.png" alt="video-call"/> -->
+                                                </div>
+                                            </button>
+                                            <button onclick="clickOfButtons(this, '.all-controls .left-panel .list')">
+                                                <h3>Guests All</h3>
+                                                <div class="sending">
+                                                    <!-- <img width="48" height="48" src="https://img.icons8.com/FFFFFF/material-rounded/48/video-call.png" alt="video-call"/> -->
+                                                </div>
+                                            </button>
+                                            <button onclick="clickOfButtons(this, '.all-controls .left-panel .list')">
+                                                <h3>Focused Solo</h3>
+                                                <div class="sending">
+                                                    <!-- <img width="48" height="48" src="https://img.icons8.com/FFFFFF/material-rounded/48/video-call.png" alt="video-call"/> -->
+                                                </div>
+                                            </button>
+                                        </div>
+                
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="content-pages">
+                                <div class="room page">
+                                    <div class="controls-nav">
+                                        <h1 class="room-name">Room 1</h1>
+                                        <!-- <div class="zoom">
+                                            <input type="range" min="100" value="300" max="500" autocomplete="off">
+                                        </div> -->
+                                    </div>
+                                    <div class="video-grid scrollbar--dark">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overlay">
+    
+                    </div>
+                </div>
+                <div class="menu-small-image">
+                    <div class="wrapper">
+                        <h2>Room 1 Chat</h2>
+                        <div class="messages">
+                            <div class="talk">
+                                <h4>Guest 1</h4>
+                                <p>Hey Y'all!</p>
+                            </div>
+                            <div class="talk">
+                                <h4>Guest 2</h4>
+                                <p>When is the stream starting?</p>
+                            </div>
+                            <div class="talk me">
+                                <h4>ME</h4>
+                                <p>5 minutes!</p>
+                            </div>
+                            <div class="talk">
+                                <h4>[MOD] Jimmy</h4>
+                                <p>Sweet</p>
+                            </div>
+                        </div>
+                        <div class="enter apply-btn-styles">
+                            <input type="text" value="Alright, here we go..." autocomplete="off">
+                            <button>
+                                <img width="48" height="48" src="https://img.icons8.com/C6C6C6/material-rounded/48/filled-sent.png" alt="filled-sent"/>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-tall-image">
+                    <div class="insp-pages apply-btn-styles">
+                        <div class="page room scrollbar--dark">
+                            <div class="scroll">
+                                <!-- Room Attributes Section -->
+                                <div class="insp-opener">
+                                    <button class="open" onclick="openInspSection(this);">
+                                        <!-- Arrow Icon -->
+                                        <div class="icon">
+                                            <img width="48" height="48" src="https://img.icons8.com/757575/material-rounded/48/expand-arrow--v1.png" alt="expand-arrow--v1"/>
+                                        </div>
+                                        <h3>Room Attributes</h3>
+                                    </button>
+                                    <button class="reload">
+                                        <img width="24" height="24" src="https://img.icons8.com/757575/material-rounded/24/reboot.png" alt="reboot"/>
+                                    </button>
+                                </div>
+    
+                                <div class="insp-section active">
+                                    <div class="settings-grid">
+                                        <div class="label">
+                                            <h4>Room Name</h4>
+                                        </div>
+                                        <div class="track">
+                                            <div>
+                                                <input type="text" value="Room 1" autocomplete="off">
+                                            </div>
+                                        </div>
+    
+                                        <div class="label">
+                                            <h4>Guest Limit</h4>
+                                        </div>
+                                        <div class="track">
+                                            <div>
+                                                <div class="number-value-input">
+                                                    <input type="text" maxlength="6" value="10" autocomplete="off">
+                                                    <p>10<span></span></p>
+                                                    <button class="up"><img width="24" height="24" src="https://img.icons8.com/686868/material-rounded/24/sort-up.png" alt="sort-up"/></button>
+                                                    <button class="down"><img width="24" height="24" src="https://img.icons8.com/686868/material-rounded/24/sort-down.png" alt="sort-down"/></button>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="under-input-checkbox">
+                                                    <input type="checkbox" autocomplete="off">
+                                                    <p>Unlimited Guests</p>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="label with-switch">
+                                            <h4>Allow Joining</h4>
+                                            <label class="switch">
+                                                <input type="checkbox" checked autocomplete="off">
+                                                <span class="switch-slider"></span>
+                                            </label>
+                                        </div>
+                                        <div class="track">
+                                            <div>
+                                                <div class="sub-text">
+                                                    <p>Via link or internally</p>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="label with-switch">
+                                            <h4>List in stream</h4>
+                                            <label class="switch">
+                                                <input type="checkbox" autocomplete="off">
+                                                <span class="switch-slider"></span>
+                                            </label>
+                                        </div>
+                                        <div class="track">
+                                            <div>
+                                                <div class="sub-text">
+                                                    <p>Is it visible to guests?</p>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                </div>
+    
+                                <!-- Feeds Section -->
+                                <div class="insp-opener">
+                                    <button class="open" onclick="openInspSection(this);">
+                                        <!-- Arrow Icon -->
+                                        <div class="icon">
+                                            <img width="48" height="48" src="https://img.icons8.com/757575/material-rounded/48/expand-arrow--v1.png" alt="expand-arrow--v1"/>
+                                        </div>
+                                        <h3>Feeds</h3>
+                                    </button>
+                                    <button class="reload">
+                                        <img width="24" height="24" src="https://img.icons8.com/757575/material-rounded/24/reboot.png" alt="reboot"/>
+                                    </button>
+                                </div>
+    
+                                <div class="insp-section active">
+                                    <div class="settings-grid">
+                                        <div class="label">
+                                            <h4>P2P Video Quality</h4>
+                                        </div>
+                                        <div class="track">
+                                            <div>
+                                                <div class="number-value-input">
+                                                    <input type="text" maxlength="4" value="500" autocomplete="off">
+                                                    <p>500<span>Kbps</span></p>
+                                                    <button class="up"><img width="24" height="24" src="https://img.icons8.com/686868/material-rounded/24/sort-up.png" alt="sort-up"/></button>
+                                                    <button class="down"><img width="24" height="24" src="https://img.icons8.com/686868/material-rounded/24/sort-down.png" alt="sort-down"/></button>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="pills">
+                                                    <button><p>500</p></button>
+                                                    <button><p>1000</p></button>
+                                                    <button><p>2500</p></button>
+                                                    <button><p>6000</p></button>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="label">
+                                            <h4>Quick Mute</h4>
+                                        </div>
+                                        <div class="track">
+                                            <div>
+                                                <div class="buttons">
+                                                    <button>All Mic's</button>
+                                                    <button>All Video's</button>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="label with-switch">
+                                            <h4>Highlight</h4>
+                                            <label class="switch">
+                                                <input type="checkbox" checked autocomplete="off">
+                                                <span class="switch-slider"></span>
+                                            </label>
+                                        </div>
+                                        <div class="track">
+                                            <div>
+                                                <div class="selector with-pointer">
+                                                    <select name="director-send-locations">
+                                                        <option value="aoiv72bo">Guest 1</option>
+                                                        <option value="qov79b3v">Guest 2</option>
+                                                        <option value="12lfiyba">Named Guest</option>
+                                                        <option value="a9vybq21">Another Guest</option>
+                                                    </select>
+                                                    <button>
+                                                        <img width="48" height="48" src="https://img.icons8.com/C6C6C6/material-rounded/48/blue-pointer.png" alt="blue-pointer"/>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                                
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="text">
-                <h1 class="large">Bring in Remote Guests for Free</h1>
-                <p>Add new dimensions to your production by going remote, <span>professionally</span>.</p>
+            
+            <div class="interactable">
+                <div class="text">
+                    <h1 class="large">Bring in Remote Guests for Free</h1>
+                    <p>Add new dimensions to your production by going remote, <span>professionally</span>.</p>
+                </div>
                 <div class="buttons">
                     <button>
                         Join a Room
@@ -386,9 +390,13 @@
     <div class="main-sec advanced-feeds" data-trig>
         <div class="text">
             <h1 class="large"><span class="vid-underline">Advanced</span> Remote Feeds</h1>
-            <p>
+            <!-- <p>
                 <span class="line">Bring in remote feeds into your livestream, from anywhere in the world.</span> 
                 <span class="line">Instantanious feed, remote camera controls, 4k+ and 20 mbps+</span>
+            </p> -->
+            <p>
+                Bring in remote feeds into your livestream, from anywhere in the world.
+                Instantanious feed, remote camera controls, 4k+ and 20 mbps+
             </p>
             <p class="small">(Limited only by your hardware)</p>
         </div>

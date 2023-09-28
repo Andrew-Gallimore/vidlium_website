@@ -137,7 +137,7 @@ function serverConnect() {
 function watchTask() {    
     watch('src/css/*.css', series(styles, parallel(criticalCSS, mergeCSS)));
     watch('src/js/**/*.js', scripts);
-    watch('src/*.html', pages);
+    watch('src/*.html', series(pages, styles, parallel(criticalCSS, mergeCSS)));
 }
 
 

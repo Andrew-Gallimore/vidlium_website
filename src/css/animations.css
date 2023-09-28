@@ -37,10 +37,6 @@ Created 8/10/2023
     animation: snapIn 0.25s normal 1s forwards ease-in-out; 
     opacity: 0;
 }
-/* .advanced-feeds .display.trig * #leader-line-1-line-path {
-    animation: lineConnect 0.25s normal 1s forwards ease-in-out; 
-    opacity: 0;
-} */
 /* THREE */
 .advanced-feeds .video.three {
     opacity: 0;
@@ -56,10 +52,6 @@ Created 8/10/2023
     animation: snapIn 0.25s normal 1.55s forwards ease-in-out; 
     opacity: 0;
 }
-/* .advanced-feeds .display.trig * #leader-line-3-line-path {
-    animation: lineConnect 0.25s normal 1.55s forwards ease-in-out; 
-    opacity: 0;
-} */
 /* TWO */
 .advanced-feeds .video.two {
     opacity: 0;
@@ -75,10 +67,11 @@ Created 8/10/2023
     animation: snapIn 0.25s normal 2s forwards ease-in-out; 
     opacity: 0;
 }
-/* .advanced-feeds .display.trig ~ #leader-line-2-line-shape {
-    animation: lineConnect 0.25s normal 2s forwards ease-in-out; 
-    opacity: 0;
-} */
+@media only screen and (max-width: 1150px) {
+    .leader-line {
+        opacity: 0 !important;
+    }
+}
 
 @keyframes fadeIn {
     0% { 

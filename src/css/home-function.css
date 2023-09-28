@@ -71,6 +71,34 @@ input {
     font-size: 18px;
 }
 
+@media only screen and (max-width: 700px) {
+    h1.large {
+        font-size: 48px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 36px;
+    }
+    h3 {
+        font-size: 28px;
+    }
+    p {
+        font-size: 16px;
+    }
+    p.small {
+        font-size: 14px;
+    }
+    button {
+        font-size: 16px;
+    }
+    input {
+        font-size: 14px;
+    }
+}
+
+
 /* For discovering items that have weird margins */
 /* * {
     outline: solid 1px red;
@@ -221,6 +249,7 @@ body {
 .landing .background > div {
     position: relative;
     height: 150%;
+    overflow-x: hidden;
 }
 .landing .background img.bg {
     /* TODO: Fix this so that it doesn't stretch when scaling width or doesn't crop too small on small screens */
@@ -275,47 +304,60 @@ body {
     background: linear-gradient(171deg, #1d1d1f00 0%, #1d1d1f3d 42%, #1d1d1fc1 60%, #1d1d1fe1 67%, #1d1d1f 80%, #1D1D1F 100%);
 }
 .landing .content {
-    margin-top: 40px;
+    position: relative;
+    width: 100%;
+    max-width: 2000px;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
     z-index: 2;
 }
-.landing .text {
+.landing .interactable {
     margin-left: calc(24px + 5vw);
+}
+@media only screen and (min-width: 2200px) {
+    .landing .interactable {
+        margin-left: 0;
+    }
+}
+
+.landing .interactable .text {
     width: 520px;
 }
-.landing .text h1 {
+.landing .interactable h1 {
     letter-spacing: -0.03rem;
     line-height: 78px;
 }
-.landing .text p {
+.landing .interactable p {
     letter-spacing: 0.03rem;
 
     margin-top: 24px;
     margin-bottom: 72px;
     color: var(--text-color-midlight);
 }
-.landing .text span {
+.landing .interactable span {
     font-weight: 700;
     color: var(--text-color);
 }
 
-.landing .text .buttons {
+.landing .interactable .buttons {
     display: flex;
     flex-direction: column;
 }
-.landing .text .buttons .row {
+.landing .interactable .buttons .row {
     margin-top: 8px;
     margin-left: 56px;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.landing .text .buttons p {
+.landing .interactable .buttons p {
     user-select: none;
     margin: 0 16px;
 }
-.landing .text button {
+.landing .interactable button {
     display: flex;
-    flex-direction: row;
     align-items: center;
     width: fit-content;
     padding: 12px 32px;
@@ -325,7 +367,7 @@ body {
     background: var(--btn-bg-color);
     color: var(--text-color-midlight);
 }
-.landing .text button img {
+.landing .interactable button img {
     margin-left: 52px;
     width: 24px;
     height: 24px;
@@ -385,6 +427,90 @@ body {
 
     opacity: 0;
 }
+@media only screen and (max-width: 1500px) {
+    .landing {
+        height: 1200px;
+    }
+    .landing .interactable {
+        display: flex;
+        flex-direction: row;
+    }
+    .landing .interactable .buttons {
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: calc(24px + 5vw);
+    }
+
+    /* Three side images */
+    .landing .images {
+        position: absolute;
+        left: 50%;
+        margin-top: 600px;
+    }
+    .landing .main-image {
+        right: 50%;
+        transform: translateY(calc(-50% - 40px)) translateX(50%);
+    }
+    .landing .menu-small-image {
+        right: calc(50% - 30px);
+        transform: translateY(calc(-50% + 80px)) translateX(50%);
+    }
+    .landing .menu-tall-image {
+        right: calc(50% - 320px);
+        transform: translateY(calc(-50% + 80px)) translateX(50%);
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .landing {
+        height: 1300px;
+    }
+    .landing .interactable {
+        display: block;
+    }
+
+    .landing .images {
+        margin-top: 780px;
+        scale: 0.9;
+    }
+}
+@media only screen and (max-width: 950px) {
+    .landing {
+        height: 1150px;
+    }
+    .landing .images {
+        margin-top: 700px;
+        scale: 0.7;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .landing {
+        height: 1000px;
+    }
+    .landing .images {
+        margin-top: 600px;
+        scale: 0.5;
+    }
+    .landing .interactable .text {
+        max-width: 370px;
+        width: 100%;
+        margin-right: 24px;
+    }
+}
+@media only screen and (max-width: 515px) {
+    .landing {
+        height: 900px;
+    }
+    .landing .images {
+        margin-top: 550px;
+        scale: 0.35;
+    }
+    .landing .interactable .buttons .row {
+        margin-left: 0;
+    }
+}
+
 
 
 .advanced-feeds {
@@ -401,9 +527,18 @@ body {
     margin-top: 90px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 8px;
     max-width: 1000px;
     align-items: center;
     text-align: center;
+}
+.advanced-feeds .text p {
+    max-width: 780px;
+}
+@media only screen and (max-width: 700px) {
+    .advanced-feeds .text p {
+        max-width: 560px;
+    }
 }
 .advanced-feeds .text .line {
     display: inline-block;
@@ -429,8 +564,9 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 430px;
-    height: 500px;
+    max-width: 430px;
+    width: 80vw;
+    /* height: 500px; */
     display: flex;
     flex-direction: column;
     background: var(--panel-bg-color);
@@ -459,6 +595,7 @@ body {
 }
 .advanced-feeds .inner-video {
     margin: 8px;
+    margin-bottom: 32px;
     height: fit-content;
 }
 .advanced-feeds .video p,
@@ -541,7 +678,19 @@ body {
 .advanced-feeds .inner-video.three video {
     height: 100%;
 }
-
+@media only screen and (max-width: 1150px) {
+    .advanced-feeds .video.three {
+        right: 13%;
+    }
+    .advanced-feeds .video > * {
+        opacity: 0.5;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .advanced-feeds .video {
+        display: none;
+    }
+}
 
 .software-visual {
     position: relative;
@@ -581,6 +730,11 @@ body {
     }
     .software-visual .background .main {
         height: 1100px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .software-visual .background {
+        margin-top: 1px !important;
     }
 }
 .software-visual .background .golden {
@@ -665,13 +819,15 @@ body {
 .built .side p {
     color: var(--text-color-midlight);
 }
-.built .right {
-    margin-left: auto;
-    margin-right: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    text-align: flex-end;
+@media only screen and (min-width: 650px) {
+    .built .right {
+        margin-left: auto;
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: flex-end;
+    }
 }
 
 
@@ -825,7 +981,8 @@ body {
     text-align: flex-end;
 }
 .sports .banner h1 {
-    width: 400px;
+    width: 90%;
+    max-width: 400px;
 }
 .sports .banner .mask {
     position: relative;
