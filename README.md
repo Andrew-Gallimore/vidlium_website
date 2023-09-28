@@ -14,14 +14,14 @@
 
 <h4 align="center">
   <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">
-    <img src="https://img.shields.io/github/license/Andrew-Gallimore/vidlium_director" alt="license">
+    <img src="https://img.shields.io/github/license/Andrew-Gallimore/vidlium_website" alt="license">
   </a>
   <a href="https://github.com/amplication/amplication/graphs/contributors">
     <img src="https://img.shields.io/netlify/ddf1bb6e-e2e4-4d07-9afb-db62ecbf8808?label=hosting" alt="hosting status">
   </a>
 </h4>
 
-![](https://github.com/Andrew-Gallimore/vidlium_director/blob/main/git-imgs/Directors%20Page%208_unoptimized.jpg)
+![](https://github.com/Andrew-Gallimore/vidlium_website/blob/main/git-imgs/Landing.JPG)
 
 
 <h1 align="center">
@@ -38,10 +38,6 @@ _Its fully browser based, uses vdo.ninja under the hood, and is open-source as w
 Check out some of the 'sister repos' of vidlium_website, you can find code for other parts of the website/software/system here:
 - [Vidlium_Director](https://github.com/Andrew-Gallimore/vidlium_director)
 - [Vidlium_Docs](https://github.com/Andrew-Gallimore/vidlium_docs)
-
-
-> The `Directors Page` is a critial page which allows directors to control a Vidlium Stream. This repository holds only the code for that page found here: https://vidlium.com/director.
-
 
 ## Usage
 
@@ -108,5 +104,5 @@ Vidlium is an open-source and free project. We are committed to a fully transpar
 
 A large part of this project is licensed under the [GPL 3.0](https://www.gnu.org/licenses/gpl-3.0.en.html) license. Essentially stating that the code is required to stay open source. Be sure to check specific files, though, as some may come with a different lisense specific to that code.
 
-> README.md last updated 8/26/2023
+> README.md last updated 9/23/2023
 
